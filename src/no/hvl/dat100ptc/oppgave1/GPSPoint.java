@@ -1,65 +1,79 @@
 package no.hvl.dat100ptc.oppgave1;
-
-import no.hvl.dat100ptc.TODO;
-
 public class GPSPoint {
+	
+	private int GPStime;
+	private double GPSlatitude;
+	private double GPSlongitude;
+	private double GPSelevation;
 
 	// TODO - objektvariable
 		
 	public GPSPoint(int time, double latitude, double longitude, double elevation) {
+		GPStime = time;
+		GPSlatitude = latitude;
+		GPSlongitude = longitude;
+		GPSelevation = elevation;
+		
+		
+	// TODO - konstruktur
 
-		// TODO - konstruktur
+	
 
-		throw new UnsupportedOperationException(TODO.construtor("GPSPoint"));
+	}
 
+	public GPSPoint() {
+		// TODO Auto-generated constructor stub
 	}
 
 	// TODO - get/set metoder
 	public int getTime() {
+		 return GPStime;
 		
-		throw new UnsupportedOperationException(TODO.method());
+		
+		
 		
 	}
 
 	public void setTime(int time) {
-				
-		throw new UnsupportedOperationException(TODO.method());
+		
+			GPStime = time;
+		
 
 	}
 
 	public double getLatitude() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return GPSlatitude;
 		
 	}
 
 	public void setLatitude(double latitude) {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		GPSlatitude = latitude;
 		
 	}
 
 	public double getLongitude() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return GPSlongitude;
 		
 	}
 
 	public void setLongitude(double longitude) {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		GPSlongitude = longitude;
 		
 	}
 
 	public double getElevation() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return GPSelevation;
 		
 	}
 
 	public void setElevation(double elevation) {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		GPSelevation = elevation;
 		
 	}
 	
@@ -67,11 +81,10 @@ public class GPSPoint {
 		
 		String str;
 		
-		// TODO - start
-
-		throw new UnsupportedOperationException(TODO.method());
-
-		// TODO - slutt
+		str = GPStime +" (" +GPSlatitude + ","+ GPSlongitude + ")" + GPSelevation +"\n";
+				return str;
+		
+		
 		
 	}
 }
